@@ -200,6 +200,3 @@ The project focuses on:
 * Hackathon-ready execution
 
 It is designed to be both **demo-friendly** and **scalable for real-world use**.
-
-
-Just tell me what you want next.
