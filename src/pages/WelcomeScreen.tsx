@@ -22,7 +22,7 @@ export default function WelcomeScreen({ onComplete }: WelcomeScreenProps) {
     }, [onComplete]);
 
     return (
-        <div className="fixed inset-0 z-50 overflow-hidden bg-gradient-to-br from-primary via-accent to-primary">
+        <div className="fixed inset-0 z-50 overflow-hidden bg-gradient-to-br from-violet-600 via-indigo-600 to-purple-700">
             {/* Animated Mesh Background */}
             <div className="absolute inset-0">
                 <svg className="w-full h-full opacity-30" xmlns="http://www.w3.org/2000/svg">
@@ -31,9 +31,9 @@ export default function WelcomeScreen({ onComplete }: WelcomeScreenProps) {
                             <circle cx="20" cy="20" r="1" fill="white" opacity="0.5" />
                         </pattern>
                         <linearGradient id="meshGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stopColor="hsl(320, 75%, 60%)" stopOpacity="0.3" />
-                            <stop offset="50%" stopColor="hsl(270, 70%, 55%)" stopOpacity="0.5" />
-                            <stop offset="100%" stopColor="hsl(210, 85%, 55%)" stopOpacity="0.3" />
+                            <stop offset="0%" stopColor="hsl(260, 100%, 70%)" stopOpacity="0.3" />
+                            <stop offset="50%" stopColor="hsl(280, 100%, 65%)" stopOpacity="0.5" />
+                            <stop offset="100%" stopColor="hsl(240, 100%, 70%)" stopOpacity="0.3" />
                         </linearGradient>
                     </defs>
                     <rect width="100%" height="100%" fill="url(#grid)" />
@@ -127,15 +127,16 @@ export default function WelcomeScreen({ onComplete }: WelcomeScreenProps) {
                             className="text-center"
                         >
                             <motion.h1
-                                className="text-7xl font-black text-white mb-4"
+                                className="text-8xl font-black text-white mb-6 drop-shadow-xl tracking-tighter"
                                 animate={{
                                     backgroundImage: [
-                                        'linear-gradient(45deg, #fff, #f0f0f0)',
-                                        'linear-gradient(45deg, #f0f0f0, #fff)',
+                                        'linear-gradient(45deg, #ffffff, #e0e7ff)',
+                                        'linear-gradient(45deg, #e0e7ff, #ffffff)',
                                     ],
                                     backgroundClip: 'text',
                                     WebkitBackgroundClip: 'text',
                                     color: 'transparent',
+                                    filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.2))'
                                 }}
                                 transition={{ duration: 2, repeat: Infinity }}
                             >
