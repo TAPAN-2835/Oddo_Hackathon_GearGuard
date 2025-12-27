@@ -50,6 +50,7 @@ export function StatCard({ title, value, icon, trend, color = 'primary' }: StatC
 
   return (
     <motion.div
+      className="h-full"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       whileHover={{
@@ -57,7 +58,7 @@ export function StatCard({ title, value, icon, trend, color = 'primary' }: StatC
         transition: { duration: 0.3 },
       }}
     >
-      <Card className="p-6 bg-card border-0 overflow-hidden relative group shadow-card hover:shadow-card-float transition-shadow duration-300">
+      <Card className="h-full p-6 bg-card border-0 overflow-hidden relative group shadow-card hover:shadow-card-float transition-shadow duration-300">
         {/* Animated gradient overlay */}
         <motion.div
           className={`absolute inset-0 bg-gradient-to-br ${gradientOverlays[color]} pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
@@ -83,8 +84,8 @@ export function StatCard({ title, value, icon, trend, color = 'primary' }: StatC
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2 }}
                 className={`inline-flex items-center gap-1 mt-3 px-2 py-1 rounded-full text-sm font-medium badge-3d ${trend.positive
-                    ? 'bg-success/10 text-success'
-                    : 'bg-destructive/10 text-destructive'
+                  ? 'bg-success/10 text-success'
+                  : 'bg-destructive/10 text-destructive'
                   }`}
               >
                 <span className="text-base">{trend.positive ? '↑' : '↓'}</span>

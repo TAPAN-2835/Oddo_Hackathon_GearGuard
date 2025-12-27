@@ -70,9 +70,7 @@ export function TopNav() {
       <div className="flex h-16 items-center px-4 md:px-6">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 mr-6">
-          <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-            <img src="/logo.png" alt="GearGuard" className="h-6 w-6 object-contain" />
-          </div>
+          <img src="/logo.png" alt="GearGuard" className="h-9 w-auto object-contain" />
           <span className="hidden font-bold sm:inline-block">GearGuard</span>
         </Link>
 
